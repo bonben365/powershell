@@ -7,7 +7,7 @@ $Form = New-Object System.Windows.Forms.Form
 $Form.Size = New-Object System.Drawing.Size(785,450)
 $Form.StartPosition = "CenterScreen" #loads the window in the center of the screen
 $Form.FormBorderStyle = [System.Windows.Forms.FormBorderStyle]::FixedToolWindow #modifies the window border
-$Form.Text = "Microsoft Office Installation Toool - www.bonguides.com" #window description
+$Form.Text = "Microsoft PoweShell Installation Toool - www.bonguides.com" #window description
 $Form.ShowInTaskbar = $True
 $Form.KeyPreview = $True
 $Form.AutoSize = $True
@@ -344,8 +344,14 @@ $installall = {
    $powerappscb.Text = "PowerApps"
    $installModule.Controls.Add($powerappscb)
 
+   $graphapicb = New-Object System.Windows.Forms.checkbox
+   $graphapicb.Location = New-Object System.Drawing.Size(10,220)
+   $graphapicb.Size = New-Object System.Drawing.Size(100,20)
+   $graphapicb.Text = "Grap API"
+   $installModule.Controls.Add($graphapicb)
+
    $allcb = New-Object System.Windows.Forms.checkbox
-   $allcb.Location = New-Object System.Drawing.Size(10,220)
+   $allcb.Location = New-Object System.Drawing.Size(10,240)
    $allcb.Size = New-Object System.Drawing.Size(100,20)
    $allcb.Text = "All Services"
    $installModule.Controls.Add($allcb)
