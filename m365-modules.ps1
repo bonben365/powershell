@@ -258,7 +258,7 @@ $installall = {
 
    $installModule = New-Object System.Windows.Forms.GroupBox
    $installModule.Location = New-Object System.Drawing.Size(10,10) 
-   $installModule.size = New-Object System.Drawing.Size(130,250) 
+   $installModule.size = New-Object System.Drawing.Size(130,270) 
    $installModule.text = "Install the Module:"
    $Form.Controls.Add($installModule) 
 
