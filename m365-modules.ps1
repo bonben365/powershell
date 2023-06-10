@@ -272,85 +272,85 @@ $installall = {
 
 ############################################## Start Arch checkboxes
 
-   $msonlinecb = New-Object System.Windows.Forms.checkbox
+   $msonlinecb = New-Object System.Windows.Forms.RadioButton
    $msonlinecb.Location = New-Object System.Drawing.Size(10,20)
    $msonlinecb.Size = New-Object System.Drawing.Size(100,20)
    $msonlinecb.Checked = $false
    $msonlinecb.Text = "MSOnline"
    $installModule.Controls.Add($msonlinecb)
 
-   $azureadcb = New-Object System.Windows.Forms.checkbox
+   $azureadcb = New-Object System.Windows.Forms.RadioButton
    $azureadcb.Location = New-Object System.Drawing.Size(10,40)
    $azureadcb.Size = New-Object System.Drawing.Size(100,20)
    $azureadcb.Checked = $false
    $azureadcb.Text = "AzureAD"
    $installModule.Controls.Add($azureadcb)
 
-   $exchangeonlinecb = New-Object System.Windows.Forms.checkbox
+   $exchangeonlinecb = New-Object System.Windows.Forms.RadioButton
    $exchangeonlinecb.Location = New-Object System.Drawing.Size(10,60)
    $exchangeonlinecb.Size = New-Object System.Drawing.Size(100,20)
    $exchangeonlinecb.AutoSize = $True
    $exchangeonlinecb.Text = "Exchange Online"
    $installModule.Controls.Add($exchangeonlinecb)
 
-   $msteamscb = New-Object System.Windows.Forms.checkbox
+   $msteamscb = New-Object System.Windows.Forms.RadioButton
    $msteamscb.Location = New-Object System.Drawing.Size(10,80)
    $msteamscb.Size = New-Object System.Drawing.Size(100,20)
    $msteamscb.Checked = $false
    $msteamscb.Text = "Teams"
    $installModule.Controls.Add($msteamscb)
 
-   $sharepointcb = New-Object System.Windows.Forms.checkbox
+   $sharepointcb = New-Object System.Windows.Forms.RadioButton
    $sharepointcb.Location = New-Object System.Drawing.Size(10,100)
    $sharepointcb.Size = New-Object System.Drawing.Size(100,20)
    $sharepointcb.Checked = $false
    $sharepointcb.Text = "Sharepoint"
    $installModule.Controls.Add($sharepointcb)
 
-   $azureazcb = New-Object System.Windows.Forms.checkbox
+   $azureazcb = New-Object System.Windows.Forms.RadioButton
    $azureazcb.Location = New-Object System.Drawing.Size(10,120)
    $azureazcb.Size = New-Object System.Drawing.Size(100,20)
    $azureazcb.Text = "Azure Az"
    $installModule.Controls.Add($azureazcb)
 
-   $azurermcb = New-Object System.Windows.Forms.checkbox
+   $azurermcb = New-Object System.Windows.Forms.RadioButton
    $azurermcb.Location = New-Object System.Drawing.Size(10,120)
    $azurermcb.Size = New-Object System.Drawing.Size(100,20)
    $azurermcb.Text = "Azure RM"
    $installModule.Controls.Add($azurermcb)
 
-   $mdecb = New-Object System.Windows.Forms.checkbox
+   $mdecb = New-Object System.Windows.Forms.RadioButton
    $mdecb.Location = New-Object System.Drawing.Size(10,140)
    $mdecb.Size = New-Object System.Drawing.Size(100,20)
    $mdecb.AutoSize = $True
    $mdecb.Text = "Defender Endpoint"
    $installModule.Controls.Add($mdecb)
 
-   $intunecb = New-Object System.Windows.Forms.checkbox
+   $intunecb = New-Object System.Windows.Forms.RadioButton
    $intunecb.Location = New-Object System.Drawing.Size(10,160)
    $intunecb.Size = New-Object System.Drawing.Size(100,20)
    $intunecb.Text = "Intune"
    $installModule.Controls.Add($intunecb)
 
-   $uprintcb = New-Object System.Windows.Forms.checkbox
+   $uprintcb = New-Object System.Windows.Forms.RadioButton
    $uprintcb.Location = New-Object System.Drawing.Size(10,180)
    $uprintcb.Size = New-Object System.Drawing.Size(100,20)
    $uprintcb.Text = "Universal Print"
    $installModule.Controls.Add($uprintcb)
 
-   $powerappscb = New-Object System.Windows.Forms.checkbox
+   $powerappscb = New-Object System.Windows.Forms.RadioButton
    $powerappscb.Location = New-Object System.Drawing.Size(10,200)
    $powerappscb.Size = New-Object System.Drawing.Size(100,20)
    $powerappscb.Text = "PowerApps"
    $installModule.Controls.Add($powerappscb)
 
-   $graphapicb = New-Object System.Windows.Forms.checkbox
+   $graphapicb = New-Object System.Windows.Forms.RadioButton
    $graphapicb.Location = New-Object System.Drawing.Size(10,220)
    $graphapicb.Size = New-Object System.Drawing.Size(100,20)
    $graphapicb.Text = "Grap API"
    $installModule.Controls.Add($graphapicb)
 
-   $allcb = New-Object System.Windows.Forms.checkbox
+   $allcb = New-Object System.Windows.Forms.RadioButton
    $allcb.Location = New-Object System.Drawing.Size(10,240)
    $allcb.Size = New-Object System.Drawing.Size(100,20)
    $allcb.Text = "All Services"
