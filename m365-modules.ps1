@@ -91,7 +91,7 @@ $installgraphapi = {
    Write-Host 
    Install-PackageProvider -Name NuGet -Force
    Invoke-Command $precheck
-   Install-Module Microsoft.Graph -Scope CurrentUser -Force
+   Install-Module Microsoft.Graph -Force
    Install-Module MSAL.PS -Scope AllUsers -Force   
    Write-Host
    Write-Host "Done."
@@ -197,8 +197,8 @@ $installall = {
    Write-Host
    Write-Host "(6/12) Installing Microsoft Graph Modules..."
    Write-Host
-   Install-Module Microsoft.Graph -Scope CurrentUser -Force
-   Install-Module MSAL.PS -Scope AllUsers -Force 
+   Install-Module Microsoft.Graph -Force
+   Install-Module MSAL.PS -Force 
    Write-Host
    Write-Host "(7/12) Installing Azure Az Module..."
    Write-Host
