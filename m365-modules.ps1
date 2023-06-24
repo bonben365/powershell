@@ -175,55 +175,51 @@ $installall = {
    Install-PackageProvider -Name NuGet -Force
    Invoke-Command $precheck
    Write-Host
-   Write-Host "(1/12) Installing MSOnline Module..."
+   Write-Host "(1/11) Installing MSOnline Module..."
    Write-Host
    Install-Module -Name MSOnline
    Write-Host
-   Write-Host "(2/12) Installing AzureAD Module..."
+   Write-Host "(2/11) Installing AzureAD Module..."
    Write-Host
    Install-Module AzureAD -Force
    Write-Host
-   Write-Host "(3/12) Installing Exchange Online Management Module..."
+   Write-Host "(3/11) Installing Exchange Online Management Module..."
    Write-Host
    Install-Module -Name ExchangeOnlineManagement -Force
    Write-Host
-   Write-Host "(4/12) Installing Microsoft Teams Module..."
+   Write-Host "(4/11) Installing Microsoft Teams Module..."
    Write-Host
    Install-Module -Name MicrosoftTeams -Force -AllowClobber
    Write-Host
-   Write-Host "(5/12) Installing SharePoint Online Module..."
+   Write-Host "(5/11) Installing SharePoint Online Module..."
    Write-Host
    Install-Module -Name Microsoft.Online.SharePoint.PowerShell -Force
    Write-Host
-   Write-Host "(6/12) Installing Microsoft Graph Modules..."
+   Write-Host "(6/11) Installing Microsoft Graph Modules..."
    Write-Host
    Install-Module Microsoft.Graph -Force
    Install-Module MSAL.PS -Force 
    Write-Host
-   Write-Host "(7/12) Installing Azure Az Module..."
+   Write-Host "(7/11) Installing Azure Az Module..."
    Write-Host
    Install-Module -Name Az -Force 
    Write-Host
-   Write-Host "(8/12) Installing Microsoft Defender for Endpoint Module..."
+   Write-Host "(8/11) Installing Microsoft Defender for Endpoint Module..."
    Write-Host
    Install-Module -Name "PSMDATP"
    Write-Host
-   Write-Host "(9/12) Installing Microsoft Graph Intune Module..."
+   Write-Host "(9/11) Installing Microsoft Graph Intune Module..."
    Write-Host
    Install-Module -Name Microsoft.Graph.Intune
    Write-Host
-   Write-Host "(10/12) Installing Universal Print Management Module..."
+   Write-Host "(10/11) Installing Universal Print Management Module..."
    Write-Host
    Install-Module -Name UniversalPrintManagement
    Write-Host
-   Write-Host "(11/12) Installing Microsoft PowerApps Modules..."
+   Write-Host "(11/11) Installing Microsoft PowerApps Modules..."
    Write-Host
    Install-Module -Name Microsoft.PowerApps.Administration.PowerShell -Force
    Install-Module -Name Microsoft.PowerApps.PowerShell -AllowClobber -Force
-   Write-Host
-   Write-Host "(12/12) Installing AzureRM Modules..."
-   Write-Host
-   Install-Module -Name AzureRM -Scope CurrentUser -Repository PSGallery -Force
    Write-Host
    Write-Host "Done, all modules have been installed."
    Write-Host
